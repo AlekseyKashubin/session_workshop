@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="navbar">
+        <h1 class="text-right"> Welcome, @Context.Session.GetString("UserName")</h1>
+        
+        <a asp-action="Logout">
+            <button class="btn btn-danger mt-3 border">Log Out</button>
+        </a>
+        <hr style="height:2px; width:100%; border-width:0">
+    </div>
+    <div>
+        <h1 class="text-center" style="font-size: 50px;"> @Context.Session.GetInt32("Counter")</h1>
+    </div>
+    <div class="container">
+        <div class="d-flex justify-content-center gap-3 mb-3">
+            <a href="addOne/+1">
+                <button class="btn btn-warning" style="width: 200px; height: 100px;">+1</button>
+            </a>
+            <a href="subOne/-1">
+                <button class="btn btn-primary" style="width: 200px; height: 100px;">-1</button>
+            </a>
+        </div>
+
+        <div class="d-flex justify-content-center gap-3 ">
+            <a href="timesTwo/x2">
+                <button class="btn btn-danger " style="width: 200px; height: 100px;">x2</button>
+            </a>
+            <a href="random/+random">
+                <button class="btn btn-success" style="width: 200px; height: 100px;">+Random</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+
